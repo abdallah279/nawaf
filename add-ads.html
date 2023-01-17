@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارفع إعلانك</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.theme.default.min.css">
+    <!-- Select -->
+    <link rel="stylesheet" href="assets/plugins/select2/select2.min.css" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- start to loader -->
+    <div class="loader">
+        <img src="./assets/imgs/loader.gif" alt="">
+    </div>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar-m">
+        <div class="container">
+            <div class="nav-content">
+
+                <a href="index.html" class="logo">
+                    <img src="assets/imgs/nawaf.png" alt="">
+                </a>
+
+                <div class="links-container">
+
+                    <form action="" class="search nav-search">
+                        <input type="text" placeholder="ابحث هنا" class="search-input">
+                        <button type="submit" class="search-btn">
+                            <!-- <i class="fa-solid fa-sliders"></i> -->
+                            <img src="assets/imgs/icons8-slider-50.png" alt="">
+                        </button>
+                    </form>
+
+                    <ul class="links">
+                        <a href="index.html" class="logo d-lg-none">
+                            <img src="assets/imgs/nawaf.png" alt="">
+                        </a>
+
+                        <li>
+                            <a href="index.html" class="links-a">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="categories.html" class="links-a">الأقسام</a>
+                        </li>
+                        <li>
+                            <a href="favorite.html" class="links-a">المفضلة</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="links-a">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="mobile">
+                        <div class="search-mobile">
+                            <div class="search-icons">
+                                <div class="search-i">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="search-i search-close">
+                                    <i class='fa-solid fa-xmark'></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <span class="coll-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                         </span>
+                    </div>
+
+                </div>
+
+                <div class="navbar-icons">
+                    <div class="icons">
+
+                        <div class="dropdown-m-container">
+                            <img src="assets/imgs/user.png" class="nav-i show-drop" data-drop="user" alt="">
+                            <div class="user-drop dropdown-m dropdown-active" data-drop="user">
+                                <a href="edit-profile.html" class="drop-link">بياناتي</a>
+                                <a href="ratings.html" class="drop-link">تقييماتي</a>
+                                <a href="all-ads.html" class="drop-link">إعلاناتي</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#alertModal" class="drop-link">تسجل خروج</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#alert2Modal" class="drop-link">حذف الحساب</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-m-container">
+                            <img src="assets/imgs/bell.png" class="nav-i show-drop" data-drop="not" alt="">
+                            <div class="not-drop dropdown-m dropdown-active" data-drop="not">
+                                <div>
+                                    <a href="#" class="drop-text">هذا النص هو مثال لنص يمكن ان يستخدم في نفس المساحة</a>
+                                    <a href="#" class="drop-text">هذا النص هو مثال لنص يمكن ان يستخدم في نفس المساحة</a>
+                                    <a href="#" class="drop-text">هذا النص هو مثال لنص يمكن ان يستخدم في نفس المساحة</a>
+                                </div>
+                                <a href="notifications.html" class="more-anchor">المزيد</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href='add-ads.html' class="main-btn up">ارفع إعلانك</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Start Add Advertisements Section -->
+    <div class="add-ads main-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <div class="add-form section-style sec-padding">
+
+                        <div class="row">
+                            <div class="col-lg-8 col-md-10 col-11 mx-auto">
+
+                                <form action="add-ads-pay.html">
+                                    <h2 class="section-title">ارفع إعلانك</h2>
+                                    <div class="inputs-container">
+        
+                                        <div class="upload-ads-img">
+                                            <span class="ads-img-text">
+                                                ارفع صور الإعلان
+                                                <span class="ads-text">بحد اقصى 6 صور</span>
+                                            </span>
+                                            <div class="upload-img-container">
+
+                                                <div class="upload-img">
+                                                    <input type="file" name="" accept="image/*" multiple id="imgUpload" class="hidden-input places-imgs-input">
+                                                    <div class="img-upload-show">
+                                                        <label for="imgUpload" class="label-img">
+                                                            <img src="assets/imgs/photo-camera.png" alt="">
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                اسم الإعلان
+                                            </label>
+                                            <div class="main-input">
+                                                <input type="text" class="input-me" placeholder="أدخل اسم الإعلان">
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                سعر الإعلان
+                                            </label>
+                                            <div class="main-input">
+                                                <input type="number" class="input-me" placeholder="أدخل سعر الإعلان">
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                مدة الإعلان
+                                            </label>
+                                            <div class="main-input">
+                                                <input type="text" class="input-me" placeholder="أدخل مدة عرض الإعلان">
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                القسم الرئيسي
+                                            </label>
+                                            <div class="main-input">
+                                                <select name="" id="" class="input-me select">
+                                                    <option value="" selected disabled>اختر القسم الرئيسي</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                </select>
+                                                <!-- <i class="fa-solid fa-angle-down main-icon"></i> -->
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                القسم الفرعي
+                                            </label>
+                                            <div class="main-input">
+                                                <select name="" id="" class="input-me select">
+                                                    <option value="" selected disabled>اختر القسم الفرعي</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                </select>
+                                                <!-- <i class="fa-solid fa-angle-down main-icon"></i> -->
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                المدينة
+                                            </label>
+                                            <div class="main-input">
+                                                <select name="" id="" class=" select">
+                                                    <option value="" selected disabled>اختر المدينة</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                    <option value="">اختر القسم الرئيسي</option>
+                                                </select>
+                                                <!-- <i class="fa-solid fa-angle-down main-icon"></i> -->
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                تفاصيل الإعلان
+                                            </label>
+                                            <div class="main-input">
+                                                <textarea class="input-me text-area" placeholder="اكتب تفاصيل الإعلان"></textarea>
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                وسيلة اتصال
+                                            </label>
+                                            <div class="main-input">
+                                                <input type="text" class="input-me" placeholder="أدخل رقم الجوال أو البريد الالكتروني">
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <label for="" class="main-label">
+                                                حالة المنتج
+                                            </label>
+                                            <div class="radio-boxs">
+                                                <div class="box">
+                                                    <input type="radio" name="rad1" id="da3ef">
+                                                    <label for="da3ef">جديد</label>
+                                                </div>
+                                                <div class="box">
+                                                    <input type="radio" name="rad1" id="maqbool">
+                                                    <label for="maqbool">مستعمل</label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="input-g">
+                                            <button type="submit" class="main-btn md up mx-auto">استمرار</button>
+                                        </div>
+            
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Add Advertisements Section -->
+
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-cards gy-5">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="footer-logo">
+                        <a href="index.html" class="foot-logo-img">
+                            <img src="assets/imgs/nawaf.png" alt="">
+                        </a>
+                        <p class="footer-info">
+                            هذا النص هو مثال لنص يمكن ان يستخدم  هذا النص هو مثال لنص يمكن ان يستخدم في نفس المساحةفي نفس المساحة
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="foot-content">
+                        <h3 class="footer-head">روابط أساسية</h3>
+                        <ul class="footer-links row">
+                            <div class="col-md-6">
+                                <a href="index.html" class="link">الرئيسية</a>
+                                <a href="categories.html" class="link">الأقسام</a>
+                                <a href="add-ads.html" class="link">ارفع اعلان</a>
+                                <a href="contact-us.html" class="link">تواصل معنا</a>
+                                <a href="terms-conditions.html" class="link">الشروط والأحكام</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="edit-profile.html" class="link">بياناتي</a>
+                                <a href="favorite.html" class="link">المفضلة</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-2 col-6">
+                    <div class="foot-content">
+                        <h3 class="footer-head">تابعنا عبر</h3>
+                        <ul class="footer-links">
+                            <a href="#" class="link">فيسبوك</a>
+                            <a href="#" class="link">انستجرام</a>
+                            <a href="#" class="link">تويتر</a>
+                            <a href="#" class="link">يوتيوب</a>
+                            <a href="#" class="link">سناب شات</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Copy Right -->
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="copy">
+                        <a href="https://aait.sa/" target="_blank">تصميم وبرمجة مؤسسة أوامر الشبكة</a>
+                        <span>جميع الحقوق محفوظة لموقع نواف</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Copy Right -->
+
+
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">تسجيل دخول</h2>
+                </div>
+
+                <form action="add-ads.html" class="modal-form">
+                    <div class="modal-body">
+
+                        <div class="inputs-container">
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    رقم الجوال / البريد الالكتروني
+                                </label>
+                                <div class="main-input">
+                                    <input type="text" class="input-me" placeholder="أدخل رقم الجوال / البريد الالكتروني">
+                                </div>
+                            </div>
+    
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    كلمة المرور
+                                </label>
+                                <div class="main-input">
+                                    <span class="pass-icon main-icon">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                    </span>
+                                    <input type="password" class="input-me" placeholder="أدخل كلمة المرور">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="anchor text-end">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#sendModal" class="forget-anchor">نسيت كلمة المرور؟</a>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="main-btn md up" type="submit" data-bs-dismiss="modal" aria-label="Close">تسجيل دخول</button>
+                    </div>
+
+                    <div class="reg text-center">
+                        <a href="#" class="reg-anchor" data-bs-toggle="modal" data-bs-target="#regModal" data-bs-dismiss="modal" aria-label="Close">
+                            ليس لديك حساب؟ <span>إنشاء حساب</span>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Reg Modal -->
+    <div class="modal fade" id="regModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">إنشاء حساب</h2>
+                </div>
+
+                <form action="" class="modal-form">
+                    <div class="modal-body">
+
+                        <div class="inputs-container">
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    اسم المستخدم
+                                </label>
+                                <div class="main-input">
+                                    <input type="text" class="input-me" placeholder="أدخل اسم المستخدم">
+                                </div>
+                            </div>
+
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    رقم الجوال
+                                </label>
+                                <div class="main-input">
+                                    <input type="number" class="input-me" placeholder="أدخل رقم الجوال">
+                                </div>
+                            </div>
+
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    البريد الالكتروني
+                                </label>
+                                <div class="main-input">
+                                    <input type="email" class="input-me" placeholder="أدخل البريد الالكتروني">
+                                </div>
+                            </div>
+    
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    كلمة المرور
+                                </label>
+                                <div class="main-input">
+                                    <span class="pass-icon main-icon">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                    </span>
+                                    <input type="password" class="input-me" placeholder="أدخل كلمة المرور">
+                                </div>
+                            </div>
+    
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    تأكيد كلمة المرور
+                                </label>
+                                <div class="main-input">
+                                    <span class="pass-icon main-icon">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                    </span>
+                                    <input type="password" class="input-me" placeholder="أدخل كلمة المرور مرة أخرى">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="check-boxs">
+                            <div class="check">
+                                <input type="checkbox" name="cond" id="cond">
+                                <label for="cond">الموافقة على الشروط والأحكام</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="main-btn md up" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#codeModal">إنشاء حساب</button>
+                    </div>
+
+                    <div class="reg text-center">
+                        <a href="#" class="reg-anchor" data-bs-toggle="modal" data-bs-target="#loginModal">بالفعل لديك حساب؟ <span>تسجيل دخول</span></a>
+                    </div>
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Send code Modal -->
+    <div class="modal fade" id="sendModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">كود التفعيل</h2>
+                </div>
+
+                <form action="" class="modal-form">
+                    <div class="modal-body">
+                        <h4 class="form-title">برجاء ادخال رقم الجوال او البريد الالكتروني</h4>
+
+                        <div class="inputs-container">
+
+                            <div class="input-g">
+                                <label for="" class="main-label">
+                                    رقم الجوال / البريد الالكتروني
+                                </label>
+                                <div class="main-input">
+                                    <input type="email" class="input-me" placeholder="أدخل رقم الجوال / البريد الالكتروني">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="main-btn md up blabla" type="button" data-bs-toggle="modal" data-bs-target="#codeModal" data-bs-dismiss="modal" aria-label="Close">إرسال</button>
+                    </div>
+
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Code Modal -->
+    <div class="modal fade" id="codeModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <button type="button" class="close-model-btn" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">كود التفعيل</h2>
+                </div>
+
+                <form action="" class="modal-form">
+                    <div class="modal-body">
+                        <h4 class="form-title">برجاء ادخال كود التفعيل المرسل إليك</h4>
+
+                        <div class="code-container">
+                            <input type="number" class="code" min="0" max="9" required />
+                            <input type="number" class="code" min="0" max="9" required />
+                            <input type="number" class="code" min="0" max="9" required />
+                            <input type="number" class="code" min="0" max="9" required />
+                            <input type="number" class="code" min="0" max="9" required />
+                            <input type="number" class="code" min="0" max="9" required />
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="main-btn md up" type="submit" data-bs-dismiss="modal" aria-label="Close">إرسال</button>
+                    </div>
+
+
+                    <div class="reg text-center">
+                        <button type="button" class="reg-anchor">لم تستلم الكود بعد ؟ <span>أعد إرسال الكود</span></button>
+                    </div>
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Alert Logout Modal -->
+    <div class="modal fade done" id="alertModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">هل تود بالفعل تسجيل خروج؟</h2>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="assets/imgs/alert.gif" alt="" class="done-img">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="main-btn red md up" type="submit" data-bs-dismiss="modal" aria-label="Close">نعم</button>
+                    <button class="main-btn md up" type="submit" data-bs-dismiss="modal" aria-label="Close">لا</button>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Alert Account Delete Modal -->
+    <div class="modal fade done" id="alert2Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">هل تود بالفعل حذف الحساب؟</h2>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="assets/imgs/alert.gif" alt="" class="done-img">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="main-btn red md up" type="button" data-bs-toggle="modal" data-bs-target="#done2Modal" data-bs-dismiss="modal" aria-label="Close">نعم</button>
+                    <button class="main-btn md up" type="button" data-bs-dismiss="modal" aria-label="Close">لا</button>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Done Modal -->
+    <div class="modal fade done" id="done2Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="content-model-me">
+
+                <div class="modal-header">
+                  <h2 class="section-title">تم حذف الحساب بنجاح</h2>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="assets/imgs/done.gif" alt="" class="done-img">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="main-btn md up" type="submit" data-bs-toggle="modal" data-bs-target="#regModal" data-bs-dismiss="modal" aria-label="Close">إنشاء حساب</button>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <!-- Select -->
+    <script src="assets/plugins/select2/select2.js"></script>
+
+    <!-- Upload Multiple Images -->
+    <script>
+        const placesImgs = document.querySelectorAll('.places-imgs-input');
+
+        placesImgs.forEach((fileInput) =>{
+
+            fileInput.onchange = function (){
+                const imagesDiv = fileInput.parentElement.querySelector('.img-upload-show');
+                imagesDiv.classList.add('active');
+
+                for(file of fileInput.files){
+                    // Create Main Div
+                    let imgContainer = document.createElement('div');
+                    imgContainer.classList.add('hidden-img');
+
+                    // Create Input Hidden To Get The File Name
+                    let inputHidden = document.createElement('input');
+                    inputHidden.setAttribute("type", "hidden");
+                    inputHidden.value = `${file.name}`;
+                
+                    // Append The Input To Main Div
+                    imgContainer.append(inputHidden);
+                
+                    // Create Remove Button
+                    let removeBtn = document.createElement('span');
+                    removeBtn.classList.add('remove-img');
+                    removeBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+                
+                    // Append The Button To Main Div
+                    imgContainer.append(removeBtn);
+                
+                    // Remove Parent Div From Page When Click The Button
+                    removeBtn.onclick= function(e){
+                        e.target.closest('.hidden-img').remove();
+
+                        if(imagesDiv.children.length == 1){
+                            imagesDiv.classList.remove('active');
+                        }
+                    }
+                
+                    let reader = new FileReader();
+                    reader.onload = ()=>{
+                        // Create Img
+                        let img = document.createElement('img');
+                        img.setAttribute('src', reader.result);
+                        
+                        // Append The Img To Main Div
+                        imgContainer.append(img);
+                    }
+                    if(imagesDiv.children.length < 7){
+                        imagesDiv.append(imgContainer);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            }
+            
+        });
+
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

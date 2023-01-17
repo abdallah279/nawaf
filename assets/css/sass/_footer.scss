@@ -1,0 +1,109 @@
+.footer{
+    padding: 40px 0;
+    background-color: $blue2;
+
+    .footer-logo{
+        text-align: center;
+
+        .foot-logo-img{
+            margin-bottom: 20px;
+            display: block;
+            img{
+                max-width: 140px;
+
+                @media screen and (max-width:$screen-xs){
+                    max-width: 110px;
+                }
+            }
+        }
+
+        .footer-info{
+            color: $dark-two;
+            font-size: 17px;
+            line-height: 2;
+            width: 350px;
+            @media screen and (max-width:$screen-lg) {
+                width: auto;
+                font-size: 16px;
+            }
+
+            @media screen and (max-width:$screen-sm) {
+                font-size: 15px;
+                width: 350px;
+            }
+
+            @media screen and (max-width:$screen-xs) {
+                width: auto;
+            }
+
+            margin: auto;
+        }
+    }
+
+    .foot-content{
+        .footer-head{
+            margin-bottom: 25px;
+            font-size: 20px;
+            color: $black;
+            font-weight: 600;
+
+            @media screen and (max-width:$screen-sm) {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .footer-links{
+            .link{
+                display: block;
+                margin-bottom: 14px;
+                width: fit-content;
+                color: $dark-two;
+                transition: all .3s ease;
+                font-size: 17px;
+
+                &:hover{
+                    #{$ltr} & {
+                        transform: translateX(5px);
+                    }
+                    #{$rtl} & {
+                        transform: translateX(-5px);
+                    }
+                    color: $dark;
+                }
+
+                @media screen and (max-width:$screen-sm){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.copy-right{
+    background-color: $dark;
+    padding: 18px 0;
+    @media screen and (max-width:$screen-sm){
+        padding: 12px 0;
+    }
+
+    .copy{
+        @include between;
+        color: $white;
+        font-size: 15px;
+
+        @media screen and (max-width:$screen-sm) {
+            font-size: 14px;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        a{
+            color: $white;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
