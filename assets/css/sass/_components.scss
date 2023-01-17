@@ -47,7 +47,8 @@
 
   .search-btn{
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       @include dir-right(0);
       width: 52px;
       height: 48px;

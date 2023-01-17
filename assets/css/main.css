@@ -256,7 +256,8 @@ input:focus {
 }
 .search .search-btn {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 52px;
   height: 48px;
   border: 1px solid #010135;
@@ -1327,11 +1328,6 @@ html[lang=ar] .modal-dialog .close-model-btn {
     max-width: 85px;
   }
 }
-@media screen and (max-width: 576px) {
-  .navbar-m .nav-content .logo img {
-    max-width: 75px;
-  }
-}
 .navbar-m .nav-content .links-container {
   flex-grow: 1;
 }
@@ -1353,6 +1349,9 @@ html[lang=ar] .modal-dialog .close-model-btn {
     margin-bottom: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.3, 0.265, 1.3);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    background-color: #fff;
+    border-radius: 8px;
   }
   html[lang=en] .navbar-m .nav-content .links-container .search {
     right: 50%;
@@ -1367,7 +1366,15 @@ html[lang=ar] .modal-dialog .close-model-btn {
     transform: translateX(-50%);
   }
   .navbar-m .nav-content .links-container .search.active {
-    top: 105px;
+    top: 120px;
+  }
+}
+@media screen and (max-width: 992px) {
+  html[lang=en] .navbar-m .nav-content .links-container .search .search-btn {
+    right: 8px;
+  }
+  html[lang=ar] .navbar-m .nav-content .links-container .search .search-btn {
+    left: 8px;
   }
 }
 @media screen and (max-width: 992px) {
